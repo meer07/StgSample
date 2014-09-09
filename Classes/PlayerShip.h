@@ -17,8 +17,8 @@ using namespace cocos2d;
 class PlayerShip : public Mover
 {
 public:
-    PlayerShip();
     void Move();
+    CREATE_FUNC(PlayerShip);
 };
 
 #endif /* defined(__StgSample__PlayerShip__) */

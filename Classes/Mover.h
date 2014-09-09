@@ -16,7 +16,18 @@ using namespace cocos2d;
 class Mover : public cocos2d::Sprite
 {
 public:
-    virtual void Move();
+    // 速度
+    float speed;
+    // 加速度
+    float speedRate;
+    // 角度
+    float angle;
+    // 位置を示すID
+    int placeID;
+    // 生存しているかどうか
+    bool isAlive;
+    // それぞれの派生クラスで処理を実装するので仮想メソッド
+    virtual void Move(){};
 };
 
 #endif /* defined(__StgSample__Mover__) */

@@ -17,7 +17,12 @@ using namespace cocos2d;
 class Enemy : public Mover
 {
 public:
-    Enemy();
+    float shotSpeed;
+    float shotSpeedRate;
+    float shotAngle;
+    Layer *rootLayer;
+    
+    void Move();
 };
 
 #endif /* defined(__StgSample__Enemy__) */

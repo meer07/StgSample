@@ -7,3 +7,7 @@
 //
 
 #include "PlayerShip.h"
+
+void PlayerShip::Move(){
+    log("Hello!!");
+}

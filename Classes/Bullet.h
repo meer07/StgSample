@@ -16,11 +16,8 @@ using namespace cocos2d;
 class Bullet : public Mover
 {
 public:
-    float speed;
-    
-    Bullet();
-    
     void Move();
+    static Bullet* create();
 };
 
 #endif /* defined(__StgSample__Bullet__) */
