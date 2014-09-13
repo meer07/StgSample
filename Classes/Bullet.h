@@ -17,7 +17,7 @@ class Bullet : public Mover
 {
 public:
     void Move();
-    static Bullet* create();
+    static Bullet* create(float speed,float speedRate,float angle,std::string fileName);
 };
 
 #endif /* defined(__StgSample__Bullet__) */

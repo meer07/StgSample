@@ -17,9 +17,6 @@ using namespace cocos2d;
 class Enemy : public Mover
 {
 public:
-    float shotSpeed;
-    float shotSpeedRate;
-    float shotAngle;
     Layer *rootLayer;
     
     void Move();

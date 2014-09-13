@@ -8,15 +8,15 @@
 
 #include "Bullet.h"
 
-Bullet* Bullet::create()
+Bullet* Bullet::create(float speed,float speedRate,float angle,std::string fileName)
 {
     Bullet *bullet = new Bullet();
-    bullet->speed = 1;
-    bullet->speedRate = 1;
-    bullet->angle = 90;
+    bullet->speed = speed;
+    bullet->speedRate = speedRate;
+    bullet->angle = angle;
     bullet->isAlive = true;
     
-    if (bullet && bullet->initWithFile("bullet.png"))
+    if (bullet && bullet->initWithFile(fileName))
     {
         bullet->autorelease();
         bullet->retain();

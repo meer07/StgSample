@@ -1,5 +1,8 @@
 #include "HelloWorldScene.h"
 #include "Enemy01.h"
+#include "Enemy02.h"
+#include "Enemy03.h"
+#include "Enemy04.h"
 USING_NS_CC;
 
 Scene* HelloWorld::createScene()
@@ -29,7 +32,7 @@ bool HelloWorld::init()
     
     auto windowSize = Director::getInstance()->getWinSize();
     
-    Enemy01 *enemy = Enemy01::create(this);
+    Enemy04 *enemy = Enemy04::create(this);
     enemy->setPosition(windowSize.width/2, windowSize.height/2);
     TaskManager::getInstance()->AddEnemyTask(*enemy, *this);
     this->scheduleUpdate();

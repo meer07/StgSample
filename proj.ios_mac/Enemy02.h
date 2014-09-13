@@ -1,13 +1,15 @@
 //
-//  Enemy01.h
+//  Enemy02.h
 //  StgSample
 //
-//  Created by 海下直哉 on 2014/09/07.
+//  Created by 海下直哉 on 2014/09/12.
 //
 //
 
-#ifndef __StgSample__Enemy01__
-#define __StgSample__Enemy01__
+#ifndef __StgSample__Enemy02__
+#define __StgSample__Enemy02__
+
+#include <iostream>
 
 #include <iostream>
 #include "cocos2d.h"
@@ -17,14 +19,15 @@
 
 using namespace cocos2d;
 
-class Enemy01 : public Enemy{
+class Enemy02 : public Enemy{
 public:
     float shotSpeed;
     float shotSpeedRate;
     float shotAngle;
     float shotDelay;
     
-    static Enemy01* create(Layer *rootLayer_);
+    static Enemy02* create(Layer *rootLayer_);
     void Move();
 };
-#endif /* defined(__StgSample__Enemy01__) */
+
+#endif /* defined(__StgSample__Enemy02__) */
